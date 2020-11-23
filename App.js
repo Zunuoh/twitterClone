@@ -1,6 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import HomeScreen from './src/Homecreen';
+import SearchScreen from './src/SearchScreen';
+import NotificationScreen from './src/NotificationScreen';
+import MessageScreen from './src/MessageScreen';
 
 export default function App() {
   return (
