@@ -1,6 +1,8 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, Flatlist} from 'react-native';
 import {Feather} from '@expo/vector-icons';
+
+const trendList = [{name:"Patrick"}, {name:"Patrick"}, {name:"Patrick"}, {name:"Patrick"}];
 
 const SearchScreen =()=>{
     return(
@@ -27,9 +29,21 @@ const SearchScreen =()=>{
             </View>
 
             <View style={{width:"100%", backgroundColor:"red", height:"30%"}}>
-            <Image source={require('../assets/images.jpeg')} style={{height:50, width:50}}/>
+            <Image source={require('../assets/images.jpeg')} style={{height:"99%", width:"100%"}}/>
 
             </View>
+
+          <Flatlist
+          data={trendList}
+          renderItem={({item})=>(
+              <View style={{justifyContent:"center", marginBottom:10}}>
+              <Text style={{backgroundColor:"blue", color:"white", padding:10}}>
+                  {item.name}
+              </Text>
+              </View>
+          )}
+          
+          />
         </View>
     )
 }

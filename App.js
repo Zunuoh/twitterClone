@@ -21,7 +21,7 @@ const MainSectionTab = () =>{
       // inactiveBackgroundColor:"#110c11",
       activeTintColor: '#000',
       inactiveTintColor: '#ccc',
-    }}>
+    }} >
     <Tab.Screen name ="Home" component={HomeScreen} options={{
           tabBarIcon: ({color,size})=> (
             <Feather name="home" color="black" size={24}/>
@@ -48,15 +48,16 @@ const MainSectionTab = () =>{
 }
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Main" component={MainSectionTab} options={{headerShown:false}}/>
-        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}}/>
-        <Stack.Screen name="Search" component={SearchScreen} options={{headerShown:false}}/>
-        <Stack.Screen name="Notification" component={NotificationScreen} options={{headerShown:false}}/>
-        <Stack.Screen name="Message" component={MessageScreen} options={{headerShown:false}}/>
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <Stack.Navigator>
+    //     <Stack.Screen name="Main" component={MainSectionTab} options={{headerShown:false}}/>
+    //     <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}}/>
+    //     <Stack.Screen name="Search" component={SearchScreen} options={{headerShown:false}}/>
+    //     <Stack.Screen name="Notification" component={NotificationScreen} options={{headerShown:false}}/>
+    //     <Stack.Screen name="Message" component={MessageScreen} options={{headerShown:false}}/>
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+    <MessageScreen/>
   );
 }
 
