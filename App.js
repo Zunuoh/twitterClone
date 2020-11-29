@@ -5,6 +5,7 @@ import HomeScreen from './src/Homecreen';
 import SearchScreen from './src/SearchScreen';
 import NotificationScreen from './src/NotificationScreen';
 import MessageScreen from './src/MessageScreen';
+import SettingsScreen from './src/Drawer/Settings';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -57,7 +58,7 @@ export default function App() {
     //     <Stack.Screen name="Message" component={MessageScreen} options={{headerShown:false}}/>
     //   </Stack.Navigator>
     // </NavigationContainer>
-    <MessageScreen/>
+    <SettingsScreen/>
   );
 }
 
