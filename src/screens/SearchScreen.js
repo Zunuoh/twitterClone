@@ -29,7 +29,7 @@ const SearchScreen =()=>{
             </View>
 
             <View style={{width:"100%", backgroundColor:"red", height:"30%"}}>
-            <Image source={require('../assets/images.jpeg')} style={{height:"99%", width:"100%"}}/>
+            <Image source={require('../../assets/images.jpeg')} style={{height:"99%", width:"100%"}}/>
 
             </View>
 
@@ -45,7 +45,7 @@ const SearchScreen =()=>{
           
           />
         </View>
-    )
+    );
 }
 
 export default SearchScreen;
